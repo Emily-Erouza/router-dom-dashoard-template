@@ -1,0 +1,16 @@
+{
+    "blogs" :[
+        {"title":"horror",
+         "author":"cate" ,
+         "id":1},
+
+        {"title":"thrillle",
+         "author": "John",
+          "id":2},
+
+        {"title":"zombie", 
+        "author": "beauty" ,
+         "id":3}
+
+    ]
+}
