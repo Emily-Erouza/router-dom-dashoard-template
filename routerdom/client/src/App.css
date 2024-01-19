@@ -56,3 +56,132 @@
         .blog-preview a{
       text-decoration: none;
           }
+
+
+          /* Home */
+          body {
+
+            background-size: cover;
+            background-color: white;
+            }
+            
+            
+            .App{
+              text-align: center;
+             
+            }
+            
+            .Home {
+              background-image: url("https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg");
+              background-size: cover;
+              height: 400%;
+              width: 600px;
+              border-radius: 3px;
+              box-shadow: 5px 10px 10px #151616;
+              margin:  10px auto;
+              position: relative;
+              padding: 0px;
+              background-repeat: no-repeat;
+              padding: 10px;
+              text-align: center;
+              margin-top: 5%;
+            }
+            p{
+              color: rgb(216, 127, 50);
+            }
+            .button {
+              color: #df9595;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-top: 10px;
+            }
+            
+            
+            .button:hover {
+              background-color: #d84aeb;
+            }
+          
+
+            /* Signup */
+            .form {
+              margin: 0 auto;
+              width: 300px;
+              padding: 10%;
+              background-image: url("https://helios-i.mashable.com/imagery/articles/06LBr3GgJpEr7Ik28e0fFpw/hero-image.fill.size_1248x702.v1611617345.jpg");
+                background-size: cover;
+              box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+              max-width: 390px;
+              padding: 30px;
+              border-radius: 5px;
+              overflow: hidden;
+              position: relative;
+              left: 37%;
+              font-style: italic;
+              color: #fcfcfc;
+              text-decoration: red;
+              width: '30rem',
+            
+                  
+            }
+            
+            input {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              box-sizing: border-box;
+            }
+            
+            button {
+              background-color: #5daeb4;
+              border: none;
+              color: white;
+              padding: 16px 20px;
+              text-decoration: none;
+              margin: 4px 2px;
+              cursor: pointer;
+              border-radius: 50px;
+              box-shadow: 0 8px 20px 0 rgba(22, 21, 21, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+             button:hover {
+              background-color: gray;
+            } 
+            
+            button:hover {
+              box-shadow: 0 12px 16px 0 rgb(83, 122, 122), 0 17px 50px 0 rgb(83, 121, 121);
+            }
+            
+            label {
+              cursor: pointer
+            }
+            
+            .AddBook-page {
+              width: 360px;
+              padding: 8% 0 0;
+              margin: auto;
+              position: relative;
+              text-align: center;
+            }
+            
+            #form-switch {
+              display: none
+            }
+            
+            #AddName-form {
+              display: none;
+            
+            
+            }
+            
+            #form-switch:checked~#AddName-form {
+              display: block
+            }
+            
+            #form-switch:checked~#AddBooks-form {
+              display: none
+            } 
+
+
+    

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const NameProps=({blogs, title,handleSubmit,handleClick}) =>{
 
 
@@ -8,10 +8,19 @@ const NameProps=({blogs, title,handleSubmit,handleClick}) =>{
                     <h2>{title}</h2>
                     {blogs.map((blog) => (
                         <div className='blog-preview' key={blog.id}>
-                            <h2>{blog.title}</h2>
-                            <p>written by {blog.author}</p>
-                            <button onClick={() => handleClick('Books')}>Home</button>
-                            <button onClick={()=> handleSubmit(blog.id)}>Book</button>
+                           <Link to ={`/blogs/${blog.id}`}>
+                        <h2>{blog.title}</h2>
+                        <p>written by {blog.author}</p>
+                        <button onClick={handleClick}>delete</button>
+                        </Link>
+
+                        <Link to="/">
+                            <button onClick={() => handleClick}>Home</button>
+                        </Link>
+                        <Link to="Book">
+                        
+                            <button onClick={()=> handleClick}>Book</button>
+                        </Link>
                         </div>
                     )
                     )}

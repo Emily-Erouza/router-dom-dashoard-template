@@ -1,16 +1,44 @@
 {
-    "blogs" :[
-        {"title":"horror",
-         "author":"cate" ,
-         "id":1},
-
-        {"title":"thrillle",
-         "author": "John",
-          "id":2},
-
-        {"title":"zombie", 
-        "author": "beauty" ,
-         "id":3}
-
-    ]
+  "blogs": [
+    {
+      "title": "horror",
+      "author": "cate",
+      "id": "1"
+    },
+    {
+      "title": "thrillle",
+      "author": "John",
+      "id": "2"
+    },
+    {
+      "title": "zombie",
+      "author": "beauty",
+      "id": "3"
+    },
+    {
+      "id": "f7ae",
+      "nameInput": "",
+      "bookInput": "kjb"
+    },
+    {
+      "id": "7748",
+      "nameInput": "dfghjk",
+      "bookInput": ""
+    },
+    {
+      "id": "ca34",
+      "nameInput": "",
+      "bookInput": "lessss"
+    },
+    {
+      "id": "4b90",
+      "nameInput": "poijh",
+      "bookInput": "lessss"
+    },
+    {
+      "id": "a285",
+      "nameInput": "",
+      "bookInput": "kjb"
+    }
+  ]
 }
