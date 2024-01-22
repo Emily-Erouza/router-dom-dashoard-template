@@ -9,22 +9,27 @@ function Home() {
   const [addname, setAddName] = useState("");
   const [addbooks, setAddBooks] = useState("");
 
-  const [bookInput, setBookInput] = useState("");
-  const [nameInput, setNameInput] = useState("");
 
-  const [isPending, setIsPending] = useState(true);
+
+
+const [title,setTitle] = useState('');
+const [author,setAuthor] = useState('');
+
+
+
 
   const handleClick = (e) => {
     e.preventDefault();
     const blog = { names, books };
     console.log(blog);
-    // setName("userNames");
+    setName("userNames");
     // console.log('title'+ name)
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const blog = { nameInput, bookInput };
+    const blog ={ title,author };
+
     fetch("http://localhost:8000/blogs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -38,7 +43,7 @@ function Home() {
     <div>
       <div className="home" id="home">
         <h1>Welcome to BookStore</h1>
-        <p>Turning Pages, Creating Memories: Your Bookstore Oasis</p>
+        <p>Turning Pages, Creating Memories...</p>
         <p>{name}</p>
 
         <Link to="Name">
@@ -47,8 +52,8 @@ function Home() {
         <Link to="Book">
           <button onClick={() => handleClick}>Book</button>
         </Link>
-        <Link to="Dashbaord">
-          <button onClick={() => handleClick}>Dashbaord</button>
+        <Link to="Dashboard">
+          <button onClick={() => handleClick}>Dashboard</button>
         </Link>
       </div>
 
@@ -63,13 +68,12 @@ function Home() {
           onSubmit={handleSubmit}
         >
           <h2>AddBook</h2>
-          <p>Please Add Books </p>
+          <p>Blog title </p>
           <input
             type="text"
             placeholder=" Enter AddBook"
-            id="Books"
-            value={bookInput}
-            onChange={(e) => setBookInput(e.target.value)}
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
             required
           />
           <button type="submit" id="btn" onSubmit={addbooks}>
@@ -87,13 +91,12 @@ function Home() {
           onSubmit={handleSubmit}
         >
           <h2>AddName</h2>
-          <p>Please Add BooksName </p>
+          <p>Blog Author </p>
           <input
             type="name "
             placeholder=" Enter AddName"
-            id="AddNames"
-            value={nameInput}
-            onChange={(e) => setNameInput(e.target.value)}
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
             required
           />
           <button type="submit" id="btn" onSubmit={addname}>
@@ -101,6 +104,7 @@ function Home() {
           </button>
 
           <label for="form-switch">AddBook..</label>
+       
         </form>
       </div>
     </div>

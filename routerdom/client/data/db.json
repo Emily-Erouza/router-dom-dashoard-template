@@ -16,29 +16,34 @@
       "id": "3"
     },
     {
-      "id": "f7ae",
-      "nameInput": "",
-      "bookInput": "kjb"
+      "title": "Jackie",
+      "author": "keen",
+      "id": "4"
     },
     {
-      "id": "7748",
-      "nameInput": "dfghjk",
-      "bookInput": ""
+      "id": "94cc",
+      "title": "hello",
+      "author": "kyle"
     },
     {
-      "id": "ca34",
-      "nameInput": "",
-      "bookInput": "lessss"
+      "id": "3fb3",
+      "title": "gun",
+      "author": ""
     },
     {
-      "id": "4b90",
-      "nameInput": "poijh",
-      "bookInput": "lessss"
+      "id": "5e52",
+      "title": "Ninjas",
+      "author": ""
     },
     {
-      "id": "a285",
-      "nameInput": "",
-      "bookInput": "kjb"
+      "id": "b21e",
+      "title": "kitty",
+      "author": ""
+    },
+    {
+      "id": "3442",
+      "title": "ken",
+      "author": ""
     }
   ]
 }

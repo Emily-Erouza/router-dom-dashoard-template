@@ -11,7 +11,7 @@ const NameProps=({blogs, title,handleSubmit,handleClick}) =>{
                            <Link to ={`/blogs/${blog.id}`}>
                         <h2>{blog.title}</h2>
                         <p>written by {blog.author}</p>
-                        <button onClick={handleClick}>delete</button>
+                       
                         </Link>
 
                         <Link to="/">
