@@ -6,8 +6,6 @@ import Navbar from "./component/Navbar";
 import Dashboard from "./component/Dashboard";
 import BlogDetails from './component/BlogDetails';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// import NoPage from "./pages/NoPage";
 import "./App.css";
 
 function App() {

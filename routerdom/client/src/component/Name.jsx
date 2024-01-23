@@ -6,7 +6,6 @@ function Name() {
 const [isPending,setIsPending] =useState(true);
 
 
-
   const handleSubmit = (id) => {
     const newBlogs = blogs.filter((blog) => blog.id === id);
     setBlogs(newBlogs);
@@ -15,8 +14,11 @@ const [isPending,setIsPending] =useState(true);
   const handleClick = (id) => {};
 
   useEffect(() => {
-    setTimeout(() =>{
+  setTimeout(() =>{
 
+localStorage.setItem('blogs',JSON.stringify(blogs))
+const results =localStorage.getItem('blogs')
+JSON.parse(results)
    
     fetch("http://localhost:8000/blogs")
       .then((res) => {
@@ -27,7 +29,7 @@ const [isPending,setIsPending] =useState(true);
         setIsPending(false);
       });
     },1000)
-  }, []);
+  }, [blogs]);
   return (
     <div className="names" id="Name">
       {isPending && <div> Loading...</div>}

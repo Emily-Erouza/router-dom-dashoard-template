@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 function Home() {
-  const [name, setName] = useState("Home");
+  // const [name, setName] = useState("Home");
 
   const [names, setNames] = useState("");
   const [books, setBooks] = useState("");
 
-  const [addname, setAddName] = useState("");
-  const [addbooks, setAddBooks] = useState("");
+//   const [addname, setAddName] = useState("");
+//   const [addbooks, setAddBooks] = useState("");
 
 
 
 
-const [title,setTitle] = useState('');
-const [author,setAuthor] = useState('');
+// const [title,setTitle] = useState('');
+// const [author,setAuthor] = useState('');
 
 
 
@@ -22,29 +22,29 @@ const [author,setAuthor] = useState('');
     e.preventDefault();
     const blog = { names, books };
     console.log(blog);
-    setName("userNames");
+    // setName("userNames");
     // console.log('title'+ name)
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const blog ={ title,author };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const blog ={ title,author };
 
-    fetch("http://localhost:8000/blogs", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(blog),
-    }).then(() => {
-      console.log("new blog added");
-    });
-  };
+  //   fetch("http://localhost:8000/blogs", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(blog),
+  //   }).then(() => {
+  //     console.log("new blog added");
+  //   });
+  // };
 
   return (
     <div>
       <div className="home" id="home">
         <h1>Welcome to BookStore</h1>
         <p>Turning Pages, Creating Memories...</p>
-        <p>{name}</p>
+        {/* <p>{name}</p> */}
 
         <Link to="Name">
           <button onClick={() => handleClick}>Name</button>
@@ -57,7 +57,7 @@ const [author,setAuthor] = useState('');
         </Link>
       </div>
 
-      <div className="Addpages">
+      {/* <div className="Addpages">
         <input type="checkbox" id="form-switch" />
 
         <form
@@ -106,7 +106,7 @@ const [author,setAuthor] = useState('');
           <label for="form-switch">AddBook..</label>
        
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }

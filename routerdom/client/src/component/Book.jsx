@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {Link} from 'react-router-dom'
 function Book() {
   const [blogs, setBlogs] = useState([
@@ -10,12 +10,19 @@ function Book() {
   const [title,setTitle] = useState('');
 
 
-
   const handleClick =  (e) => {
     e.preventDefault();
     const blog ={ title };
     console.log(blog);
     };
+
+    useEffect(()=>{
+
+      localStorage.setItem('blogs',JSON.stringify(blogs))
+      const results =localStorage.getItem('blogs')
+      JSON.parse(results)
+
+    },[blogs])
   return (
     <div className="books" id="Book" onClick={handleClick}>
       <h3>Books</h3>
